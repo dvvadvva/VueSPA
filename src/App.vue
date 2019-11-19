@@ -2,14 +2,14 @@
   <div id="app" class="App">
     <div class="App.h"></div>
     <div class="App.h">
-      <div>Vue demo</div>
+      <h1>Vue demo</h1>
     </div>
     <div class="App.n">
       <div class="menuItems">
         <router-link to="/HelloWorld" class="menuItems.i"
           >Hello World</router-link
         >
-        <router-link to="/bar" class="menuItems.i">Item 1</router-link>
+        <router-link to="/Controls" class="menuItems.i">Controls</router-link>
         <router-link to="/foo" class="menuItems.i">Item 2</router-link>
       </div>
     </div>

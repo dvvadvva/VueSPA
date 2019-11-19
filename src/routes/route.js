@@ -1,4 +1,4 @@
-import pageOne from "../components/PageOne";
+import Controls from "../components/Controls";
 import pageTwo from "../components/PageTwo";
 import HelloWorld from "../components/HelloWorld";
 
@@ -12,8 +12,8 @@ export const routes = [
       component: HelloWorld
     },
     {
-      path: "/bar",
-      component: pageOne
+      path: "/Controls",
+      component: Controls
     },
     {
       path: "/foo",
