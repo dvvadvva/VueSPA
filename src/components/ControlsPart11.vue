@@ -21,7 +21,7 @@
       <label><input type="radio" value="Female" v-model="gender" />Female</label>    
     </div>
     <div><select v-model='selectedPriority'><option v-for="itemPrior in priority" v-bind:key="itemPrior">{{ itemPrior }}</option></select></div>
-    <Switch></Switch>
+    <appSwitch></appSwitch>
     <br />
     <div>email: {{ userData.email }}</div>
     <div>password: {{ userData.pass }}</div>
@@ -39,7 +39,7 @@
 
 <script>
 
-import Switch from './switch'
+import appSwitch from './switch'
 
 const CreateLocalState = () => {
   return {
@@ -61,6 +61,6 @@ export default {
   data: () => {
     return CreateLocalState();
   },
-  components: { Switch }
+  components: { appSwitch }
 };
 </script>
