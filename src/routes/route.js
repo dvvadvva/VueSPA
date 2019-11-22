@@ -3,9 +3,13 @@ import ControlsPart11 from "../components/ControlsPart11";
 import pageTwo from "../components/PageTwo";
 import HelloWorld from "../components/HelloWorld";
 import CSSandEvent from "../components/CSSandEvent";
-
+import Directives from "../components/DirectivesPart12";
 
 export const routes = [
+  {
+    path: "/directives12",
+    component: Directives
+  },
     {
       path: "/HelloWorld",
       component: HelloWorld
