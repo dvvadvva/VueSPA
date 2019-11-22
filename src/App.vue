@@ -10,6 +10,9 @@
           >Hello World</router-link
         >
         <router-link to="/Controls" class="menuItems.i">Controls</router-link>
+        <router-link to="/cssandevent" class="menuItems.i">CSS and event</router-link>
+        <router-link to="/controlspart11" class="menuItems.i">Part 11. Handling user Input and forms</router-link>
+        
         <router-link to="/foo" class="menuItems.i">Item 2</router-link>
       </div>
     </div>
@@ -22,8 +25,8 @@
 
 export default {
   name: "app"
-
 };
+
 </script>
 
 <style scoped>
