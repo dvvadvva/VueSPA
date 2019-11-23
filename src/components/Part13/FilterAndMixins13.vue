@@ -25,30 +25,17 @@
 <script>
 
 import listFruits from './ListFruits.vue'
-//import { listFruitMixins } from "./ListFruitsObj";
+import { listFruitMixins } from "./ListFruitsObj";
 
 export default {
+  mixins: [listFruitMixins],
   data() {
     return {
-      someText: "Text with UPPER and lower symbol",
-      Fruits: ["apple", "mango", "orange", "melone", "banana"],
-      filterCondition: ""
+      someText: "Text with UPPER and lower symbol"
     };
   },
      components: {
       listFruits: listFruits
-  }, 
-  computed: {
-    filterFruits() {
-      return this.Fruits.filter(el => {
-        return el.match(this.filterCondition);
-      });
-    },
-    filters: {
-      upperconv(value) {
-        return value.toUpperCase();
-      }
-    }
   }
 };
 </script>
