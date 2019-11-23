@@ -14,7 +14,6 @@
 </template>
 
 <script>
-
 import { listFruitMixins } from "./ListFruitsObj";
 
 export default {
