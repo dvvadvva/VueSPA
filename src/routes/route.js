@@ -4,7 +4,7 @@ import pageTwo from "../components/PageTwo";
 import HelloWorld from "../components/HelloWorld";
 import CSSandEvent from "../components/CSSandEvent";
 import Directives from "../components/DirectivesPart12";
-import FilterAndMixins from '../components/FilterAndMixins13'
+import FilterAndMixins from '../components/Part13/FilterAndMixins13'
 
 export const routes = [
   {

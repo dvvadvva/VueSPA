@@ -5,21 +5,28 @@
     <div>{{ someText }}</div>
     <div>{{ someText | upperconv }}</div>
     <div>{{ someText | lowerconv }}</div>
+    <br />
     <div>Фильтр дя списка<input v-model="filterCondition" /></div>
-    <div>
-      <ul class="someList"><strong>Полный список</strong>
-        <li v-for="Items in Fruits" v-bind:key="Items">{{ Items }}</li>
-      </ul>
-      <ul class="someList"><strong>Отфильтрованый</strong>
-        <li v-for="onefruits in filterFruits" v-bind:key="onefruits">
-          {{ onefruits }}
-        </li>
-      </ul>
-    </div>
+    <ul class="someList">
+      <strong>Полный список</strong>
+      <li v-for="Items in Fruits" v-bind:key="Items">{{ Items }}</li>
+    </ul>
+    <ul class="someList">
+      <strong>Отфильтрованый</strong>
+      <li v-for="onefruits in filterFruits" v-bind:key="onefruits">
+        {{ onefruits }}
+      </li>
+    </ul>
+    <br />
+    <listFruits />
   </div>
 </template>
 
 <script>
+
+import listFruits from './ListFruits.vue'
+//import { listFruitMixins } from "./ListFruitsObj";
+
 export default {
   data() {
     return {
@@ -28,6 +35,9 @@ export default {
       filterCondition: ""
     };
   },
+     components: {
+      listFruits: listFruits
+  }, 
   computed: {
     filterFruits() {
       return this.Fruits.filter(el => {
