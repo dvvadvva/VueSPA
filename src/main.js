@@ -20,7 +20,6 @@ Vue.directive("highcolor", {
     el.style.backgroundColor = binding.value;
   }
 });
-
 Vue.directive("highifcolor", {
   bind(el, binding) {
     if (binding.arg == "background") {
@@ -30,6 +29,13 @@ Vue.directive("highifcolor", {
     }
   }
 });
+
+Vue.filter('lowerconv',
+  function(value) {
+      return value.toLowerCase();
+    }
+);
+
 
 new Vue({
   router,
