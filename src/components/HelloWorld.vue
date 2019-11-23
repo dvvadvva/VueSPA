@@ -5,16 +5,15 @@
 </template>
 
 <script>
-let createLocalState = ()=>{
+let createLocalState = () => {
   return {
-    name: 'Hello world'
-  }
+    name: "Hello world"
+  };
 };
 
 export default {
-  data: function(){
-    return createLocalState()
-  },
-  name: 'Hello World',
-}
+  data: function() {
+    return createLocalState();
+  }
+};
 </script>

@@ -36,6 +36,13 @@ Vue.filter('lowerconv',
     }
 );
 
+Vue.mixin(
+  {
+    created(){
+      console.log('Test Global mixins')
+    }
+  }
+)
 
 new Vue({
   router,

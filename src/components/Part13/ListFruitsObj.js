@@ -10,11 +10,9 @@ export const listFruitMixins = {
         return this.Fruits.filter(el => {
           return el.match(this.filterCondition);
         });
-      },
-      filters: {
-        upperconv(value) {
-          return value.toUpperCase();
-        }
       }
+    },
+    created(){
+      console.log('create');
     }
   };

@@ -1,12 +1,17 @@
 import Controls from "../components/Controls";
 import ControlsPart11 from "../components/ControlsPart11";
 import pageTwo from "../components/PageTwo";
-import HelloWorld from "../components/HelloWorld";
+import helloWorld from "../components/HelloWorld";
 import CSSandEvent from "../components/CSSandEvent";
 import Directives from "../components/DirectivesPart12";
 import FilterAndMixins from '../components/Part13/FilterAndMixins13'
+import animations from '../components/Part14/AnimationPart14'
 
 export const routes = [
+  {
+    path: "/animations14",
+    component: animations
+  },
   {
     path: "/filterandmixins13",
     component: FilterAndMixins
@@ -17,11 +22,11 @@ export const routes = [
   },
     {
       path: "/HelloWorld",
-      component: HelloWorld
+      component: helloWorld
     },
     {
       path: "/",
-      component: HelloWorld
+      component: helloWorld
     },
     {
       path: "/Controls",

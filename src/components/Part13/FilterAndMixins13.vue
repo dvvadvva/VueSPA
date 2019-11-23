@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Part 13. Using and creating Directives</h1>
-    <div>Lesson 179</div>
+    <div>Lesson 184</div>
     <div>{{ someText }}</div>
     <div>{{ someText | upperconv }}</div>
     <div>{{ someText | lowerconv }}</div>
@@ -36,7 +36,12 @@ export default {
   },
      components: {
       listFruits: listFruits
-  }
+  },
+      filters: {
+        upperconv(value) {
+          return value.toUpperCase();
+        }
+      }
 };
 </script>
 

@@ -6,7 +6,7 @@
     </div>
     <div class="App.n">
       <div class="menuItems">
-        <router-link to="/HelloWorld" class="menuItems.i"
+        <router-link to="/helloWorld" class="menuItems.i"
           >Hello World</router-link
         >
         <router-link to="/Controls" class="menuItems.i">Controls</router-link>
@@ -14,6 +14,7 @@
         <router-link to="/controlspart11" class="menuItems.i">Part 11. Handling user Input and forms</router-link>
         <router-link to="/directives12" class="menuItems.i">Part 12. Using and creating Directives</router-link>
         <router-link to="/filterandmixins13" class="menuItems.i">Part 13 Filter and Mixins</router-link>
+        <router-link to="/animations14" class="menuItems.i">Part 14 Animations and transitions</router-link>
         
         <router-link to="/foo" class="menuItems.i">Item 2</router-link>
       </div>
